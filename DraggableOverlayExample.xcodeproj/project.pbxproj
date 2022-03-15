@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55881E0727E06C6F005ADEFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55881E0627E06C6F005ADEFB /* AppDelegate.swift */; };
+		55881E0927E06C6F005ADEFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55881E0827E06C6F005ADEFB /* SceneDelegate.swift */; };
+		55881E0E27E06C6F005ADEFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55881E0C27E06C6F005ADEFB /* Main.storyboard */; };
+		55881E1027E06C70005ADEFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55881E0F27E06C70005ADEFB /* Assets.xcassets */; };
+		55881E1327E06C70005ADEFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55881E1127E06C70005ADEFB /* LaunchScreen.storyboard */; };
+		55F7094C27E08368007A0A69 /* ExampleDraggableDetailsOverlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F7094B27E08368007A0A69 /* ExampleDraggableDetailsOverlayViewController.swift */; };
+		55F7094E27E085DD007A0A69 /* DraggableOverlayFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F7094D27E085DD007A0A69 /* DraggableOverlayFramework.framework */; };
+		55F7094F27E085DD007A0A69 /* DraggableOverlayFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55F7094D27E085DD007A0A69 /* DraggableOverlayFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55F7095527E08905007A0A69 /* Pods_DraggableOverlayExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F7095427E08905007A0A69 /* Pods_DraggableOverlayExample.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		55F7095027E085DD007A0A69 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				55F7094F27E085DD007A0A69 /* DraggableOverlayFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		55881E0327E06C6F005ADEFB /* DraggableOverlayExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DraggableOverlayExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55881E0627E06C6F005ADEFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		55881E0827E06C6F005ADEFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		55881E0D27E06C6F005ADEFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		55881E0F27E06C70005ADEFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		55881E1227E06C70005ADEFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		55881E1427E06C70005ADEFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55F7094B27E08368007A0A69 /* ExampleDraggableDetailsOverlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleDraggableDetailsOverlayViewController.swift; sourceTree = "<group>"; };
+		55F7094D27E085DD007A0A69 /* DraggableOverlayFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DraggableOverlayFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55F7095127E088CA007A0A69 /* Pods_DraggableOverlayFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_DraggableOverlayFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55F7095427E08905007A0A69 /* Pods_DraggableOverlayExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_DraggableOverlayExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A46B003128CDFF8390C5CF08 /* Pods-DraggableOverlayExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DraggableOverlayExample.release.xcconfig"; path = "Target Support Files/Pods-DraggableOverlayExample/Pods-DraggableOverlayExample.release.xcconfig"; sourceTree = "<group>"; };
+		B2758221EBF8C988BF8CFF65 /* Pods-DraggableOverlayExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DraggableOverlayExample.debug.xcconfig"; path = "Target Support Files/Pods-DraggableOverlayExample/Pods-DraggableOverlayExample.debug.xcconfig"; sourceTree = "<group>"; };
+		EA245503455B521294D8DE64 /* Pods_DraggableOverlayExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DraggableOverlayExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55881E0027E06C6F005ADEFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55F7095527E08905007A0A69 /* Pods_DraggableOverlayExample.framework in Frameworks */,
+				55F7094E27E085DD007A0A69 /* DraggableOverlayFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A95E299DF709156521010EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2758221EBF8C988BF8CFF65 /* Pods-DraggableOverlayExample.debug.xcconfig */,
+				A46B003128CDFF8390C5CF08 /* Pods-DraggableOverlayExample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		55881DFA27E06C6F005ADEFB = {
+			isa = PBXGroup;
+			children = (
+				55881E0527E06C6F005ADEFB /* DraggableOverlayExample */,
+				55881E0427E06C6F005ADEFB /* Products */,
+				3A95E299DF709156521010EC /* Pods */,
+				C0BF0BD5D01213766B6AFECA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		55881E0427E06C6F005ADEFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55881E0327E06C6F005ADEFB /* DraggableOverlayExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55881E0527E06C6F005ADEFB /* DraggableOverlayExample */ = {
+			isa = PBXGroup;
+			children = (
+				55881E0627E06C6F005ADEFB /* AppDelegate.swift */,
+				55881E0827E06C6F005ADEFB /* SceneDelegate.swift */,
+				55F7094B27E08368007A0A69 /* ExampleDraggableDetailsOverlayViewController.swift */,
+				55881E0C27E06C6F005ADEFB /* Main.storyboard */,
+				55881E0F27E06C70005ADEFB /* Assets.xcassets */,
+				55881E1127E06C70005ADEFB /* LaunchScreen.storyboard */,
+				55881E1427E06C70005ADEFB /* Info.plist */,
+			);
+			path = DraggableOverlayExample;
+			sourceTree = "<group>";
+		};
+		C0BF0BD5D01213766B6AFECA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55F7095427E08905007A0A69 /* Pods_DraggableOverlayExample.framework */,
+				55F7095127E088CA007A0A69 /* Pods_DraggableOverlayFramework.framework */,
+				55F7094D27E085DD007A0A69 /* DraggableOverlayFramework.framework */,
+				EA245503455B521294D8DE64 /* Pods_DraggableOverlayExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55881E0227E06C6F005ADEFB /* DraggableOverlayExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55881E1727E06C70005ADEFB /* Build configuration list for PBXNativeTarget "DraggableOverlayExample" */;
+			buildPhases = (
+				D2CA339C284F8AF400FC8E26 /* [CP] Check Pods Manifest.lock */,
+				55881DFF27E06C6F005ADEFB /* Sources */,
+				55881E0027E06C6F005ADEFB /* Frameworks */,
+				55881E0127E06C6F005ADEFB /* Resources */,
+				12D93F57F5F739A84514D0AD /* [CP] Embed Pods Frameworks */,
+				55F7095027E085DD007A0A69 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DraggableOverlayExample;
+			productName = DraggableOverlayExample;
+			productReference = 55881E0327E06C6F005ADEFB /* DraggableOverlayExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55881DFB27E06C6F005ADEFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					55881E0227E06C6F005ADEFB = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 55881DFE27E06C6F005ADEFB /* Build configuration list for PBXProject "DraggableOverlayExample" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 55881DFA27E06C6F005ADEFB;
+			productRefGroup = 55881E0427E06C6F005ADEFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55881E0227E06C6F005ADEFB /* DraggableOverlayExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55881E0127E06C6F005ADEFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55881E1327E06C70005ADEFB /* LaunchScreen.storyboard in Resources */,
+				55881E1027E06C70005ADEFB /* Assets.xcassets in Resources */,
+				55881E0E27E06C6F005ADEFB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12D93F57F5F739A84514D0AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DraggableOverlayExample/Pods-DraggableOverlayExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DraggableOverlayExample/Pods-DraggableOverlayExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DraggableOverlayExample/Pods-DraggableOverlayExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2CA339C284F8AF400FC8E26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DraggableOverlayExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55881DFF27E06C6F005ADEFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55F7094C27E08368007A0A69 /* ExampleDraggableDetailsOverlayViewController.swift in Sources */,
+				55881E0727E06C6F005ADEFB /* AppDelegate.swift in Sources */,
+				55881E0927E06C6F005ADEFB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		55881E0C27E06C6F005ADEFB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55881E0D27E06C6F005ADEFB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		55881E1127E06C70005ADEFB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55881E1227E06C70005ADEFB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		55881E1527E06C70005ADEFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		55881E1627E06C70005ADEFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		55881E1827E06C70005ADEFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2758221EBF8C988BF8CFF65 /* Pods-DraggableOverlayExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MW2UF479VW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DraggableOverlayExample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Shakuro.DraggableOverlayExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		55881E1927E06C70005ADEFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A46B003128CDFF8390C5CF08 /* Pods-DraggableOverlayExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MW2UF479VW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DraggableOverlayExample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Shakuro.DraggableOverlayExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55881DFE27E06C6F005ADEFB /* Build configuration list for PBXProject "DraggableOverlayExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55881E1527E06C70005ADEFB /* Debug */,
+				55881E1627E06C70005ADEFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55881E1727E06C70005ADEFB /* Build configuration list for PBXNativeTarget "DraggableOverlayExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55881E1827E06C70005ADEFB /* Debug */,
+				55881E1927E06C70005ADEFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 55881DFB27E06C6F005ADEFB /* Project object */;
+}

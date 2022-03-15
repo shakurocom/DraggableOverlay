@@ -1,0 +1,6 @@
+framework module Pods_DraggableOverlayExample {
+  umbrella header "Pods-DraggableOverlayExample-umbrella.h"
+
+  export *
+  module * { export * }
+}
