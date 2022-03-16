@@ -10,7 +10,7 @@
 - [Usage](#usage)
 - [License](#license)
 
-`DraggableOverlay` is a Swift library designed to add ability to scroll endlessly items horizontally. `InfinityScrollView` has various configuration options like fast deceleration rate, snap to item center, configurable snap deceleration animations. 
+`DraggableOverlay` is a Swift library designed to add ability to scroll endlessly items horizontally. `DraggableOverlay` has various configuration options like fast deceleration rate, snap to item center, configurable snap deceleration animations. 
 
 
 Draggable Overlay example:
@@ -61,7 +61,7 @@ If you prefer not to use CocoaPods, you can integrate Shakuro.DraggableOverlay s
 
 ## Usage
 
-Have a look at the [DraggableOverlay_Example](https://github.com/shakurocom/DraggableOverlay/tree/main/DraggableOverlayExample) (perform `pod install` before usage)
+Have a look at the [DraggableOverlayExample](https://github.com/shakurocom/DraggableOverlay/tree/main/DraggableOverlayExample) (perform `pod install` before usage)
 
 ## License
 
