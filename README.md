@@ -12,18 +12,38 @@
 
 `DraggableOverlay` is a Swift library to show custom draggble viewcontroller. `DraggableOverlay` has various configuration options:
 
-### Shadows
-isShadowEnabled, isContainerShadowEnabled,
+### Shadow Options
+isShadowEnabled 
+isContainerShadowEnabled
 
-### Colors
-shadowBackgroundColor, draggableContainerBackgroundColor, handleColor
+### Color Options
+shadowBackgroundColor
+draggableContainerBackgroundColor
+handleColor
 
-### Common
-isTapOnShadowToCloseEnabled, draggableContainerTopCornersRadius, handleContainerHeight, handleSize, handleCornerRadius, 
+### Common Options
+isTapOnShadowToCloseEnabled
+draggableContainerTopCornersRadius
+handleContainerHeight
+handleSize
+handleCornerRadius
 
-### Animations
-showHideAnimationDuration, isSnapToAnchorsEnabled, isDragOffScreenToHideEnabled, isBounceEnabled, bounceDragDumpening, snapCalculationUsesDeceleration,
-snapCalculationDecelerationCanSkipNextAnchor, snapCalculationDecelerationRate, snapAnimationNormalDuration, snapAnimationUseSpring, snapAnimationTopAnchorUseSpring, snapAnimationSpringDuration, snapAnimationSpringDuration, snapAnimationSpringDamping, snapAnimationSpringInitialVelocity
+### Animation Options
+showHideAnimationDuration
+isSnapToAnchorsEnabled
+isDragOffScreenToHideEnabled
+isBounceEnabled
+bounceDragDumpening
+snapCalculationUsesDeceleration
+snapCalculationDecelerationCanSkipNextAnchor
+snapCalculationDecelerationRate
+snapAnimationNormalDuration
+snapAnimationUseSpring
+snapAnimationTopAnchorUseSpring
+snapAnimationSpringDuration
+snapAnimationSpringDuration
+snapAnimationSpringDamping
+snapAnimationSpringInitialVelocity
 
 Draggable Overlay example:
 
