@@ -10,28 +10,24 @@
 - [Usage](#usage)
 - [License](#license)
 
-`DraggableOverlay` is a Swift library designed to add ability to scroll endlessly items horizontally. `DraggableOverlay` has various configuration options like fast deceleration rate, snap to item center, configurable snap deceleration animations. 
+`DraggableOverlay` is a Swift library to show custom draggble viewcontroller. `DraggableOverlay` has various configuration options:
 
+### Shadows
+isShadowEnabled, isContainerShadowEnabled,
+
+### Colors
+shadowBackgroundColor, draggableContainerBackgroundColor, handleColor
+
+### Common
+isTapOnShadowToCloseEnabled, draggableContainerTopCornersRadius, handleContainerHeight, handleSize, handleCornerRadius, 
+
+### Animations
+showHideAnimationDuration, isSnapToAnchorsEnabled, isDragOffScreenToHideEnabled, isBounceEnabled, bounceDragDumpening, snapCalculationUsesDeceleration,
+snapCalculationDecelerationCanSkipNextAnchor, snapCalculationDecelerationRate, snapAnimationNormalDuration, snapAnimationUseSpring, snapAnimationTopAnchorUseSpring, snapAnimationSpringDuration, snapAnimationSpringDuration, snapAnimationSpringDamping, snapAnimationSpringInitialVelocity
 
 Draggable Overlay example:
 
-![](Resources/infinity_scroll.gif)
-
-
-Draggable Overlay example with different items sizes:
-
-![](Resources/infinity_scroll_with_different_sizes.gif)
-
-
-Draggable Overlay example with snap to item center:
-
-![](Resources/infinity_scroll_with_snap_to_center.gif)
-
-
-Single item behaviour:
-
-![](Resources/single_item_behaviour.gif)
-
+![](Resources/draggable_overlay.gif)
 
 ## Requirements
 
@@ -60,7 +56,7 @@ $ pod install
 If you prefer not to use CocoaPods, you can integrate Shakuro.DraggableOverlay simply by copying it to your project.
 
 ## Usage
-
+Just initilize DraggableDetailsOverlayViewController with your nested viewcontroller and delegate. Nested viewcontroller must adopt the DraggableDetailsOverlayViewControllerDelegate and DraggableDetailsOverlayNestedInterface protocols. The delegate allows to respond to scrolling events.
 Have a look at the [DraggableOverlayExample](https://github.com/shakurocom/DraggableOverlay/tree/main/DraggableOverlayExample) (perform `pod install` before usage)
 
 ## License
