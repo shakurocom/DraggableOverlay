@@ -10,11 +10,21 @@
 - [Usage](#usage)
 - [License](#license)
 
-`DraggableOverlay` is a Swift library to show custom draggble viewcontroller. `DraggableOverlay` has various configuration options:
+A DraggableOverlay is a Swift library - an overlay that dynamically reveals or hides the content underneath it.  `DraggableOverlay` has various configuration options:
+
+Draggable Overlay with default options:
+
+![](Resources/draggable_overlay_example_1.gif)
+
+Draggable Overlay example 2:
+Options:
+
+![](Resources/draggable_overlay_example_2.gif)
 
 Draggable Overlay example:
+Options:
 
-![](Resources/draggable_overlay.gif)
+![](Resources/draggable_overlay_example_3.gif)
 
 ## Requirements
 
