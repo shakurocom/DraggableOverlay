@@ -16,13 +16,11 @@ Draggable Overlay with default options:
 
 ![](Resources/draggable_overlay_example_1.gif)
 
-Draggable Overlay example 2:
-Options:
+Draggable Overlay with enabled shadow (red color) and container shadow (green color), customized draggable container height (30 px):
 
 ![](Resources/draggable_overlay_example_2.gif)
 
-Draggable Overlay example:
-Options:
+Draggable Overlay with custom handle corner and custom handle container corner, customized handle color (yellow):
 
 ![](Resources/draggable_overlay_example_3.gif)
 
