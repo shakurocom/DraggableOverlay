@@ -12,39 +12,6 @@
 
 `DraggableOverlay` is a Swift library to show custom draggble viewcontroller. `DraggableOverlay` has various configuration options:
 
-### Shadow Options
-isShadowEnabled 
-isContainerShadowEnabled
-
-### Color Options
-shadowBackgroundColor
-draggableContainerBackgroundColor
-handleColor
-
-### Common Options
-isTapOnShadowToCloseEnabled
-draggableContainerTopCornersRadius
-handleContainerHeight
-handleSize
-handleCornerRadius
-
-### Animation Options
-showHideAnimationDuration
-isSnapToAnchorsEnabled
-isDragOffScreenToHideEnabled
-isBounceEnabled
-bounceDragDumpening
-snapCalculationUsesDeceleration
-snapCalculationDecelerationCanSkipNextAnchor
-snapCalculationDecelerationRate
-snapAnimationNormalDuration
-snapAnimationUseSpring
-snapAnimationTopAnchorUseSpring
-snapAnimationSpringDuration
-snapAnimationSpringDuration
-snapAnimationSpringDamping
-snapAnimationSpringInitialVelocity
-
 Draggable Overlay example:
 
 ![](Resources/draggable_overlay.gif)
