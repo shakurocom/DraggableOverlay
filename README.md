@@ -24,6 +24,10 @@ Draggable Overlay example with custom handle corner and custom handle container 
 
 ![](Resources/draggable_overlay_example_3.gif)
 
+Draggable Overlay example with bounce animation:
+
+![](Resources/draggable_overlay_example_4.gif)
+
 ## Requirements
 
 - iOS 11.0+
