@@ -14,7 +14,6 @@
 		55F7094C27E08368007A0A69 /* ExampleDraggableDetailsOverlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F7094B27E08368007A0A69 /* ExampleDraggableDetailsOverlayViewController.swift */; };
 		55F7094E27E085DD007A0A69 /* DraggableOverlayFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F7094D27E085DD007A0A69 /* DraggableOverlayFramework.framework */; };
 		55F7094F27E085DD007A0A69 /* DraggableOverlayFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55F7094D27E085DD007A0A69 /* DraggableOverlayFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		55F7095527E08905007A0A69 /* Pods_DraggableOverlayExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F7095427E08905007A0A69 /* Pods_DraggableOverlayExample.framework */; };
 		A5107A4A27F237D9000F558A /* ExampleDraggableDetailsContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5107A4927F237D9000F558A /* ExampleDraggableDetailsContentViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,12 +40,7 @@
 		55881E1427E06C70005ADEFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55F7094B27E08368007A0A69 /* ExampleDraggableDetailsOverlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleDraggableDetailsOverlayViewController.swift; sourceTree = "<group>"; };
 		55F7094D27E085DD007A0A69 /* DraggableOverlayFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DraggableOverlayFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		55F7095127E088CA007A0A69 /* Pods_DraggableOverlayFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_DraggableOverlayFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		55F7095427E08905007A0A69 /* Pods_DraggableOverlayExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_DraggableOverlayExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A46B003128CDFF8390C5CF08 /* Pods-DraggableOverlayExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DraggableOverlayExample.release.xcconfig"; path = "Target Support Files/Pods-DraggableOverlayExample/Pods-DraggableOverlayExample.release.xcconfig"; sourceTree = "<group>"; };
 		A5107A4927F237D9000F558A /* ExampleDraggableDetailsContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleDraggableDetailsContentViewController.swift; sourceTree = "<group>"; };
-		B2758221EBF8C988BF8CFF65 /* Pods-DraggableOverlayExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DraggableOverlayExample.debug.xcconfig"; path = "Target Support Files/Pods-DraggableOverlayExample/Pods-DraggableOverlayExample.debug.xcconfig"; sourceTree = "<group>"; };
-		EA245503455B521294D8DE64 /* Pods_DraggableOverlayExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DraggableOverlayExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +48,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55F7095527E08905007A0A69 /* Pods_DraggableOverlayExample.framework in Frameworks */,
 				55F7094E27E085DD007A0A69 /* DraggableOverlayFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,8 +58,6 @@
 		3A95E299DF709156521010EC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B2758221EBF8C988BF8CFF65 /* Pods-DraggableOverlayExample.debug.xcconfig */,
-				A46B003128CDFF8390C5CF08 /* Pods-DraggableOverlayExample.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -106,10 +97,7 @@
 		C0BF0BD5D01213766B6AFECA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				55F7095427E08905007A0A69 /* Pods_DraggableOverlayExample.framework */,
-				55F7095127E088CA007A0A69 /* Pods_DraggableOverlayFramework.framework */,
 				55F7094D27E085DD007A0A69 /* DraggableOverlayFramework.framework */,
-				EA245503455B521294D8DE64 /* Pods_DraggableOverlayExample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -121,11 +109,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55881E1727E06C70005ADEFB /* Build configuration list for PBXNativeTarget "DraggableOverlayExample" */;
 			buildPhases = (
-				D2CA339C284F8AF400FC8E26 /* [CP] Check Pods Manifest.lock */,
 				55881DFF27E06C6F005ADEFB /* Sources */,
 				55881E0027E06C6F005ADEFB /* Frameworks */,
 				55881E0127E06C6F005ADEFB /* Resources */,
-				12D93F57F5F739A84514D0AD /* [CP] Embed Pods Frameworks */,
 				55F7095027E085DD007A0A69 /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -182,48 +168,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		12D93F57F5F739A84514D0AD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DraggableOverlayExample/Pods-DraggableOverlayExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DraggableOverlayExample/Pods-DraggableOverlayExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DraggableOverlayExample/Pods-DraggableOverlayExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D2CA339C284F8AF400FC8E26 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DraggableOverlayExample-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		55881DFF27E06C6F005ADEFB /* Sources */ = {
@@ -376,7 +320,6 @@
 		};
 		55881E1827E06C70005ADEFB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2758221EBF8C988BF8CFF65 /* Pods-DraggableOverlayExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -405,7 +348,6 @@
 		};
 		55881E1927E06C70005ADEFB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A46B003128CDFF8390C5CF08 /* Pods-DraggableOverlayExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
