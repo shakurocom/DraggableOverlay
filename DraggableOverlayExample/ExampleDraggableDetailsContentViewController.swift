@@ -6,16 +6,6 @@ import Foundation
 import DraggableOverlayFramework
 import UIKit
 
-internal enum ExampleStoryboardName: String {
-
-    case main = "Main"
-
-    internal func storyboard() -> UIStoryboard {
-        return UIStoryboard(name: self.rawValue, bundle: Bundle.main)
-    }
-
-}
-
 internal protocol ExampleDraggableDetailsContentViewControllerDelegate: AnyObject {
     func contentDidPressCloseButton()
 }
@@ -32,7 +22,8 @@ internal class ExampleDraggableDetailsContentViewController: UIViewController {
     private var currentContentScrollOffsetBottom: CGPoint = .zero
 
     internal static func instantiate() -> ExampleDraggableDetailsContentViewController {
-        let controller: ExampleDraggableDetailsContentViewController = ExampleStoryboardName.main.storyboard().instantiateViewController(withIdentifier: "kExampleDraggableDetailsContentViewControllerID")
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let controller: ExampleDraggableDetailsContentViewController = storyboard.instantiateViewController(withIdentifier: "kExampleDraggableDetailsContentViewControllerID")
         return controller
     }
 
