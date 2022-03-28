@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		55881E0727E06C6F005ADEFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55881E0627E06C6F005ADEFB /* AppDelegate.swift */; };
-		55881E0927E06C6F005ADEFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55881E0827E06C6F005ADEFB /* SceneDelegate.swift */; };
 		55881E0E27E06C6F005ADEFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55881E0C27E06C6F005ADEFB /* Main.storyboard */; };
 		55881E1027E06C70005ADEFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55881E0F27E06C70005ADEFB /* Assets.xcassets */; };
 		55881E1327E06C70005ADEFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55881E1127E06C70005ADEFB /* LaunchScreen.storyboard */; };
@@ -16,6 +15,7 @@
 		55F7094E27E085DD007A0A69 /* DraggableOverlayFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F7094D27E085DD007A0A69 /* DraggableOverlayFramework.framework */; };
 		55F7094F27E085DD007A0A69 /* DraggableOverlayFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55F7094D27E085DD007A0A69 /* DraggableOverlayFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		55F7095527E08905007A0A69 /* Pods_DraggableOverlayExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F7095427E08905007A0A69 /* Pods_DraggableOverlayExample.framework */; };
+		A5107A4A27F237D9000F558A /* ExampleDraggableDetailsContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5107A4927F237D9000F558A /* ExampleDraggableDetailsContentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,7 +35,6 @@
 /* Begin PBXFileReference section */
 		55881E0327E06C6F005ADEFB /* DraggableOverlayExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DraggableOverlayExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55881E0627E06C6F005ADEFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		55881E0827E06C6F005ADEFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		55881E0D27E06C6F005ADEFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		55881E0F27E06C70005ADEFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55881E1227E06C70005ADEFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -45,6 +44,7 @@
 		55F7095127E088CA007A0A69 /* Pods_DraggableOverlayFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_DraggableOverlayFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F7095427E08905007A0A69 /* Pods_DraggableOverlayExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_DraggableOverlayExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A46B003128CDFF8390C5CF08 /* Pods-DraggableOverlayExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DraggableOverlayExample.release.xcconfig"; path = "Target Support Files/Pods-DraggableOverlayExample/Pods-DraggableOverlayExample.release.xcconfig"; sourceTree = "<group>"; };
+		A5107A4927F237D9000F558A /* ExampleDraggableDetailsContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleDraggableDetailsContentViewController.swift; sourceTree = "<group>"; };
 		B2758221EBF8C988BF8CFF65 /* Pods-DraggableOverlayExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DraggableOverlayExample.debug.xcconfig"; path = "Target Support Files/Pods-DraggableOverlayExample/Pods-DraggableOverlayExample.debug.xcconfig"; sourceTree = "<group>"; };
 		EA245503455B521294D8DE64 /* Pods_DraggableOverlayExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DraggableOverlayExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -93,8 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				55881E0627E06C6F005ADEFB /* AppDelegate.swift */,
-				55881E0827E06C6F005ADEFB /* SceneDelegate.swift */,
 				55F7094B27E08368007A0A69 /* ExampleDraggableDetailsOverlayViewController.swift */,
+				A5107A4927F237D9000F558A /* ExampleDraggableDetailsContentViewController.swift */,
 				55881E0C27E06C6F005ADEFB /* Main.storyboard */,
 				55881E0F27E06C70005ADEFB /* Assets.xcassets */,
 				55881E1127E06C70005ADEFB /* LaunchScreen.storyboard */,
@@ -232,7 +232,7 @@
 			files = (
 				55F7094C27E08368007A0A69 /* ExampleDraggableDetailsOverlayViewController.swift in Sources */,
 				55881E0727E06C6F005ADEFB /* AppDelegate.swift in Sources */,
-				55881E0927E06C6F005ADEFB /* SceneDelegate.swift in Sources */,
+				A5107A4A27F237D9000F558A /* ExampleDraggableDetailsContentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +309,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -364,7 +364,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

@@ -1,8 +1,5 @@
 //
-//  DraggableOverlayFramework.h
-//  DraggableOverlayFramework
-//
-//  Created by Andrey on 15.03.2022.
+// Copyright (c) 2022 Shakuro (https://shakuro.com/)
 //
 
 #import <Foundation/Foundation.h>
