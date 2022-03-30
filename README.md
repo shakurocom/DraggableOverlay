@@ -10,7 +10,7 @@
 - [Usage](#usage)
 - [License](#license)
 
-A DraggableOverlay is a Swift library - an overlay that dynamically reveals or hides the content underneath it. It describes an overlay that can be dragged up and down alongside predefined anchors. Whenever a drag gesture ends, the overlay motion will continue until it reaches one of its anchors.  `DraggableOverlay` has various configuration options.
+A `DraggableOverlay` is a Swift library - an overlay that dynamically reveals or hides the content underneath it. It describes an overlay that can be dragged up and down alongside predefined anchors. Whenever a drag gesture ends, the overlay motion will continue until it reaches one of its anchors.  `DraggableOverlay` has various configuration options.
 
 Draggable Overlay example with default options:
 
