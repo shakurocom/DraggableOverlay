@@ -12,19 +12,19 @@
 
 A `DraggableOverlay` is a Swift library - an overlay that dynamically reveals or hides the content inside it. It can be dragged up and down to stick to predefined anchors. Whenever a drag gesture ends, the overlay motion will continue until it reaches one of its anchors.  `DraggableOverlay` has various configuration options.
 
-DraggableOverlay example with default options:
+`DraggableOverlay` example with default options:
 
 ![](Resources/draggable_overlay_example_1.gif)
 
-DraggableOverlay example with enabled shadow (red color) and container shadow (green color), customized draggable container height (30 px):
+`DraggableOverlay` example with enabled shadow (red color) and container shadow (green color), customized draggable container height (30 px):
 
 ![](Resources/draggable_overlay_example_2.gif)
 
-DraggableOverlay example with custom handle corner and custom handle container corner, customized handle color (yellow) and changed top inset:
+`DraggableOverlay` example with custom handle corner and custom handle container corner radius, customized handle color (yellow) and changed top inset:
 
 ![](Resources/draggable_overlay_example_3.gif)
 
-DraggableOverlay example with bounce animation:
+`DraggableOverlay` example with bounce animation:
 
 ![](Resources/draggable_overlay_example_4.gif)
 
@@ -38,7 +38,7 @@ DraggableOverlay example with bounce animation:
 
 ### CocoaPods
 
-To integrate DraggableOverlay into your Xcode project with CocoaPods, specify it in your `Podfile`:
+To integrate `DraggableOverlay` into your Xcode project with CocoaPods, specify it in your `Podfile`:
 
 ```ruby
 pod 'Shakuro.DraggableOverlay'
