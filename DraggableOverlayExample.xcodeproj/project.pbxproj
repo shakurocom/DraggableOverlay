@@ -84,14 +84,38 @@
 			isa = PBXGroup;
 			children = (
 				55881E0627E06C6F005ADEFB /* AppDelegate.swift */,
-				55F7094B27E08368007A0A69 /* ExampleDraggableDetailsOverlayViewController.swift */,
-				A5107A4927F237D9000F558A /* ExampleDraggableDetailsContentViewController.swift */,
-				55881E0C27E06C6F005ADEFB /* Main.storyboard */,
-				55881E0F27E06C70005ADEFB /* Assets.xcassets */,
-				55881E1127E06C70005ADEFB /* LaunchScreen.storyboard */,
-				55881E1427E06C70005ADEFB /* Info.plist */,
+				6B65ED1F28D876530073F353 /* UI */,
+				6B65ED1D28D8763B0073F353 /* Resources */,
 			);
 			path = DraggableOverlayExample;
+			sourceTree = "<group>";
+		};
+		6B65ED1D28D8763B0073F353 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				55881E1427E06C70005ADEFB /* Info.plist */,
+				55881E0F27E06C70005ADEFB /* Assets.xcassets */,
+				6B65ED1E28D876480073F353 /* UI */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6B65ED1E28D876480073F353 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				55881E1127E06C70005ADEFB /* LaunchScreen.storyboard */,
+				55881E0C27E06C6F005ADEFB /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6B65ED1F28D876530073F353 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A5107A4927F237D9000F558A /* ExampleDraggableDetailsContentViewController.swift */,
+				55F7094B27E08368007A0A69 /* ExampleDraggableDetailsOverlayViewController.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		C0BF0BD5D01213766B6AFECA /* Frameworks */ = {
@@ -327,7 +351,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MW2UF479VW;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DraggableOverlayExample/Info.plist;
+				INFOPLIST_FILE = DraggableOverlayExample/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -355,7 +379,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MW2UF479VW;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DraggableOverlayExample/Info.plist;
+				INFOPLIST_FILE = DraggableOverlayExample/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
