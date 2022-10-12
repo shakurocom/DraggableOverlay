@@ -55,7 +55,7 @@ $ pod install
 If you prefer not to use CocoaPods, you can integrate Shakuro.DraggableOverlay simply by copying it to your project.
 
 ## Usage
-Just initilize DraggableDetailsOverlayViewController with your nested viewcontroller and delegate. Nested viewcontroller must adopt the DraggableDetailsOverlayViewControllerDelegate and DraggableDetailsOverlayNestedInterface protocols. The delegate allows to respond to scrolling events.
+Just initilize `DraggableDetailsOverlayViewController` with your nested viewcontroller and delegate. Nested viewcontroller must adopt the `DraggableDetailsOverlayViewControllerDelegate` and `DraggableDetailsOverlayNestedInterface` protocols. The delegate allows to respond to scrolling events.
 Have a look at the [DraggableOverlayExample](https://github.com/shakurocom/DraggableOverlay/tree/main/DraggableOverlayExample) (perform `pod install` before usage)
 
 ## License
