@@ -281,6 +281,14 @@ public class DraggableDetailsOverlayViewController: UIViewController {
     /// Default value is `false`.
     public var allowHorizontalContentScrolling: Bool = false
 
+    public var handleViewAccessibilityTitle: String?
+    public var handleViewAccessibilitySubtitle: String?
+    public var handleViewAccessibilityMaximizedTitle: String?
+    public var handleViewAccessibilityMinimizedTitle: String?
+    public var handleViewAccessibilityCollapseTitle: String?
+    public var handleViewAccessibilityExpandTitle: String?
+    public var handleViewAccessibilityHideTitle: String?
+
     private var shadowBackgroundView: UIView!
     private var draggableContainerView: UIView!
     private var draggableContainerHiddenTopConstraint: NSLayoutConstraint!
@@ -342,6 +350,8 @@ public class DraggableDetailsOverlayViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         addChildViewController(nestedController, notifyAboutAppearanceTransition: false, targetContainerView: contentContainerView)
+
+        setupAccessibility()
     }
 
     public override var childForStatusBarStyle: UIViewController? {
@@ -360,6 +370,7 @@ public class DraggableDetailsOverlayViewController: UIViewController {
     /// Affected by `isSnapToAnchorsEnabled`.
     public func show(initialAnchor: Anchor, animated: Bool, completion: (() -> Void)? = nil) {
         setVisible(true, animated: animated, initialAnchor: initialAnchor, completion: completion)
+        setupAccessibility()
     }
 
     public func hide(animated: Bool, completion: (() -> Void)? = nil) {
@@ -543,6 +554,19 @@ private extension DraggableDetailsOverlayViewController {
         })
     }
 
+    @objc private func collapseButtonPressed() -> Bool {
+        return performAccessibilityAction(isCollapse: true)
+    }
+
+    @objc private func expandButtonPressed() -> Bool {
+        return performAccessibilityAction(isCollapse: false)
+    }
+
+    @objc private func hideButtonPressed() -> Bool {
+        hide(animated: true)
+        return true
+    }
+
 }
 
 // MARK: - Private
@@ -668,6 +692,8 @@ private extension DraggableDetailsOverlayViewController {
             }
         }
         cachedAnchors = newAnchors.sorted(by: { $0.offset < $1.offset }).map({ Anchor(topOffset: $0.offset, tags: $0.tags) })
+
+        setupAccessibility()
     }
 
     private func offsetForAnchor(_ anchor: Anchor, topInset: CGFloat) -> CGFloat {
@@ -790,6 +816,9 @@ private extension DraggableDetailsOverlayViewController {
                 self.isVisible = false
             }
             completion?()
+            if self.isShadowEnabled {
+                UIAccessibility.post(notification: .layoutChanged, argument: self.view)
+            }
         }
         if animated {
             UIView.animate(
@@ -841,6 +870,56 @@ private extension DraggableDetailsOverlayViewController {
             return true
         }
         return scroll.contentOffset.y <= -scroll.contentInset.top
+    }
+
+    private func performAccessibilityAction(isCollapse: Bool) -> Bool {
+        let currentOffset = draggableContainerShownTopConstraint.constant
+        let nextAnchorIndex = cachedAnchors.firstIndex(where: { isOffsetsEqual($0.value, currentOffset) }).map({ $0 + (isCollapse ? 1 : -1) })
+        guard let nextAnchorIndexActual = nextAnchorIndex, nextAnchorIndexActual >= 0 && nextAnchorIndexActual < cachedAnchors.count else {
+            return false
+        }
+        let topInset = calculateTopInset()
+        let newCurrentOffset = offsetForAnchor(cachedAnchors[nextAnchorIndexActual], topInset: topInset)
+        animateToOffset(newCurrentOffset, isSpring: false, completion: {
+            self.delegate?.draggableDetailsOverlayDidUpdatedLayout(self)
+        })
+        setupAccessibility()
+        return true
+    }
+
+    private func setupAccessibility() {
+        guard isViewLoaded, let handleViewActual = handleView else {
+            return
+        }
+        view.accessibilityViewIsModal = isShadowEnabled
+        handleViewActual.isAccessibilityElement = true
+        let currentOffset = draggableContainerShownTopConstraint.constant
+        let currentAnchorIndex = cachedAnchors.firstIndex(where: { isOffsetsEqual($0.value, currentOffset) })
+        var label = handleViewAccessibilityTitle ?? "TODO: Overlay controller"
+        if cachedAnchors.count > 1 {
+            if currentAnchorIndex == 0 {
+                label.append(", ")
+                label.append(handleViewAccessibilityMaximizedTitle ?? "Maximized")
+            } else if currentAnchorIndex == cachedAnchors.count - 1 {
+                label.append(", ")
+                label.append("Minimized")
+            }
+        }
+        label.append(", ")
+        label.append(handleViewAccessibilitySubtitle ?? "Adjust the size of the overlay")
+        handleViewActual.accessibilityLabel = label
+        var actions: [UIAccessibilityCustomAction] = []
+        if cachedAnchors.count > 1 {
+            let collapseTitle = handleViewAccessibilityCollapseTitle ?? "Collapse"
+            let expandTitle = handleViewAccessibilityExpandTitle ?? "Expand"
+            actions.append(UIAccessibilityCustomAction(name: collapseTitle, target: self, selector: #selector(collapseButtonPressed)))
+            actions.append(UIAccessibilityCustomAction(name: expandTitle, target: self, selector: #selector(expandButtonPressed)))
+        }
+        if isDragOffScreenToHideEnabled {
+            let hideTitle = handleViewAccessibilityHideTitle ?? "Hide"
+            actions.append(UIAccessibilityCustomAction(name: hideTitle, target: self, selector: #selector(hideButtonPressed)))
+        }
+        handleViewActual.accessibilityCustomActions = actions
     }
 
 }
