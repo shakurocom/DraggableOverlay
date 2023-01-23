@@ -1,9 +1,9 @@
 PODS:
-  - Shakuro.CommonTypes (1.1.1)
+  - Shakuro.CommonTypes (1.1.4)
   - SwiftLint (0.43.1)
 
 DEPENDENCIES:
-  - Shakuro.CommonTypes (= 1.1.1)
+  - Shakuro.CommonTypes (= 1.1.4)
   - SwiftLint (= 0.43.1)
 
 SPEC REPOS:
@@ -12,9 +12,9 @@ SPEC REPOS:
     - SwiftLint
 
 SPEC CHECKSUMS:
-  Shakuro.CommonTypes: 8b15b334da1dfba894237940f890f7519d33ba3e
+  Shakuro.CommonTypes: a3c3d432a2fc19e3e7971dad13aa9066d7ce5771
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
 
-PODFILE CHECKSUM: 334b89c97677336bcbcbf1c0f739d1d268ffb9ff
+PODFILE CHECKSUM: ff3b896d2ce42f432ca5ec70cfbe633f96f24a25
 
 COCOAPODS: 1.11.3
