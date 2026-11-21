@@ -50,6 +50,23 @@ Then, run the following command:
 $ pod install
 ```
 
+### Swift Package Manager
+
+Add the package to the `dependencies` of your `Package.swift`:
+
+```swift
+.package(url: "https://github.com/shakurocom/DraggableOverlay.git", from: "1.0.5")
+```
+
+and the product to your target:
+
+```swift
+.product(name: "DraggableOverlay", package: "DraggableOverlay")
+```
+
+In Xcode, use File > Add Package Dependencies… with `https://github.com/shakurocom/DraggableOverlay.git`.
+With SPM the module is `DraggableOverlay` (`import DraggableOverlay`); with CocoaPods it is `Shakuro_DraggableOverlay`.
+
 ### Manually
 
 If you prefer not to use CocoaPods, you can integrate Shakuro.DraggableOverlay simply by copying it to your project.
