@@ -12,6 +12,7 @@ import Shakuro_CommonTypes
 #endif
 
 /// Delegate of the draggable overlay. The one whole controls it.
+@MainActor
 public protocol DraggableDetailsOverlayViewControllerDelegate: AnyObject {
 
     /// An array of anchors, that overlay will use for snapping. Anchors pointing to effectively the same point will be reduced to singular anchor.
