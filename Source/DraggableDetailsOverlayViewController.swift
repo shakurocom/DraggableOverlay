@@ -5,7 +5,11 @@
 
 import Foundation
 import UIKit
+#if SWIFT_PACKAGE
+import CommonTypes
+#else
 import Shakuro_CommonTypes
+#endif
 
 /// Delegate of the draggable overlay. The one whole controls it.
 public protocol DraggableDetailsOverlayViewControllerDelegate: AnyObject {
