@@ -55,7 +55,7 @@ $ pod install
 Add the package to the `dependencies` of your `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/shakurocom/DraggableOverlay.git", from: "1.0.5")
+.package(url: "https://github.com/shakurocom/DraggableOverlay.git", from: "1.0.6")
 ```
 
 and the product to your target:
