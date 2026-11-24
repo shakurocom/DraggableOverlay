@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'Shakuro.DraggableOverlay'
-    s.version          = '1.0.6'
+    s.version          = '1.0.7'
     s.summary          = 'Shakuro Draggable Overlay'
     s.homepage         = 'https://github.com/shakurocom/DraggableOverlay'
     s.license          = { :type => "MIT", :file => "LICENSE" }

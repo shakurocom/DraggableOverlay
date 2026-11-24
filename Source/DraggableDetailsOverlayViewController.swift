@@ -56,6 +56,7 @@ public protocol DraggableDetailsOverlayViewControllerDelegate: AnyObject {
 /// - height of container for content is dynamic and will change with drag.
 /// - minimum height is 0
 /// - priority of container's bottom constraint is 999
+@MainActor
 public protocol DraggableDetailsOverlayNestedInterface {
     /// - parameter requirePreventOfScroll: `true` indicates that overlay is currently dragging.
     /// Nested controller should prevent any content scrolling.

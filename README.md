@@ -1,7 +1,7 @@
 ![Shakuro Draggable Overlay](Resources/title_image.png)
 <br><br>
 # DraggableOverlay
-![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![Version](https://img.shields.io/badge/version-1.0.7-blue.svg)
 ![Platform](https://img.shields.io/badge/platform-iOS-lightgrey.svg)
 ![License MIT](https://img.shields.io/badge/license-MIT-green.svg)
 
@@ -55,7 +55,7 @@ $ pod install
 Add the package to the `dependencies` of your `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/shakurocom/DraggableOverlay.git", from: "1.0.6")
+.package(url: "https://github.com/shakurocom/DraggableOverlay.git", from: "1.0.7")
 ```
 
 and the product to your target:
